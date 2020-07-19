@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Router</title>
+    <style>
+      * {
+        margin: 0;
+      }
+      header {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        width: auto;
+        height: 50px;
+      }
+      header button {
+        margin: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <button onclick="router.loadRoute('')">home</button>
+      <button onclick="router.loadRoute('contacto')">contacto</button>
+      <button onclick="router.loadRoute('about')">about me</button>
+    </header>
+    <div data-router></div>
+    <script src="router/router.js"></script>
+    <script src="router/routes.js"></script>
+    <script src="index.js"></script>
+  </body>
+</html>
